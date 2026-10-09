@@ -1,0 +1,16 @@
+[package]
+name = "rust-concurrent-mempool"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+tokio = { version = "1", features = [
+    "macros",
+    "rt-multi-thread",
+    "sync",
+    "time"
+] }
+
+[[bench]]
+name = "submission"
+harness = false
